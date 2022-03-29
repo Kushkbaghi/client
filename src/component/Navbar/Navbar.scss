@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   width: 100%;
-  padding: 2rem;
+  padding: 2%;
   max-width: 960px;
   justify-content: space-between;
   align-items: center;
@@ -37,9 +37,8 @@
       color: var(--info);
       font-family: var(--fontExt);
       @media screen and (max-width: 900px) {
-       font-size: 12px;
+        font-size: 12px;
       }
-      
     }
   }
   .desk-nav {
@@ -54,7 +53,7 @@
 
     a {
       font-size: var(--fontSizeP);
-      font-family: var(--fontRegular);
+      font-family: var(--fontExt);
       width: 5px;
       height: 5px;
     }

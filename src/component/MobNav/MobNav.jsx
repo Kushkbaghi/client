@@ -18,13 +18,12 @@ export default function MobNav() {
       </div>
       {toggle ? (
         <motion.div
-          whileInView={{ x: [300, 0] }}
+          whileInView={{ x: [300, -5] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
         >
           <div className="close">
             <AiOutlineClose onClick={() => setToggle(false)} />
           </div>
-
           <ul class="mobNav__items">
             {["Start", "Om mig", "Case", "Arbetserfarenhet", "Studier"].map(
               (nav) => (
@@ -36,14 +35,11 @@ export default function MobNav() {
           </ul>
         </motion.div>
       ) : (
-        <motion.div
-          whileInView={{ x: [300, 0] }}
-          transition={{ duration: 0.85, ease: "easeOut" }}
-        >
+      
           <div className="open">
             <BiMenuAltLeft className="open" onClick={() => setToggle(true)} />
           </div>
-        </motion.div>
+       
       )}
     </div>
   );
