@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+/* CSS defualt setting */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Varela+Round&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-size: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color:var(--dark1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  /* avoid to overlapping with el above when use of padding */
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out, opacity 0.5s linear;
+  padding: .5rem;
+  border-radius: 0.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+:root {
+  --dark1: #4f575c;
+  --dark2: #0a0d25c5;
+  --dark3: #292b2c;
+  --dark4: #0a0d2525;
+  --light1: #ffff;
+  --light2: #e4e4e4;
+  --light3: #f7f7f7;
+  --light4: rgba(255, 255, 255, 0.527);
+  --primary: #0275d8;
+  --info: #5bc0de;
+  --warning: #f0ad4e;
+  --danger: #d9534f;
+  --extra:#881278d3;
+       --backgrund: linear-gradient(90deg, var(--info) 1%, var(--primary) 100%);
+
+  --fontItalic: "Lora", serif;
+  --fontRegular: "Josefin Sans", sans-serif;
+  --fontExt: "Varela Round", sans-serif;
+
+  --fontSizeH1: clamp(4rem, calc(4vw + 1.6rem), 5.5rem);
+  --fontSizeH2: clamp(3rem, calc(3.5vw + 1.6rem), 4.5rem);
+  --fontSizeH3: clamp(2.5rem, calc(3vw + 1.6rem), 4rem);
+  --fontSizeH4: clamp(2.3rem, calc(2vw + 1.6rem), 3rem);
+  --fontSizeH5: clamp(2rem, calc(1.5vw + 1.6rem), 2.5rem);
+  --fontSizeH6: clamp(1.8rem, calc(0.5vw + 1.6rem), 2rem);
+  --fontSizeP: clamp(1.6rem, calc(0.2rem + 1.6rem), 1.8rem);
+  --shadowBox: -0.1px 0.01px 20px -10px var(--dark1);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button{
+ outline: none;
+ border: none;
+}
+.app{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 0 auto;
 }

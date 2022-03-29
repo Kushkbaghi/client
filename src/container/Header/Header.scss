@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  margin: 0 auto;
+  padding: 5%;
+  width: 100%;
+  background: var(--light1);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}

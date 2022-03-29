@@ -1,0 +1,66 @@
+.nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  max-width: 960px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: transition;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
+  .nav__logo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+    flex: 0.2;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      flex: 0.3;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2),
+        0 6px 10px 0 rgba(0, 0, 0, 0.19);
+      @media screen and (max-width: 900px) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    strong {
+      font-size: var(--fontSizeP);
+      color: var(--info);
+      font-family: var(--fontExt);
+      @media screen and (max-width: 900px) {
+       font-size: 12px;
+      }
+      
+    }
+  }
+  .desk-nav {
+    flex: 0.7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    a {
+      font-size: var(--fontSizeP);
+      font-family: var(--fontRegular);
+      width: 5px;
+      height: 5px;
+    }
+    a:hover {
+      color: var(--info);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
