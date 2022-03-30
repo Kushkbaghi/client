@@ -15,6 +15,3 @@ export default function Projects({ projects }) {
     </section>
   );
 }
-{
-  /* <Project  {}/> */
-}

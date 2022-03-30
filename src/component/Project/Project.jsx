@@ -4,7 +4,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { MdSchool } from "react-icons/md";
 import "./Project.scss";
 
-export default function Cards({ project }) {
+export default function Project({ project }) {
   const imgUrl = "https://localhost:7074/Images/thumb_";
   return (
     <article key={project.id} className="project">

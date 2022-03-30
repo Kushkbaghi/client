@@ -1,0 +1,20 @@
+.jobs {
+
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h2 {
+    font-size: var(--fontSizeH1);
+    border-left: 5px solid var(--warning);
+    width: 100%;
+  }
+  .job__job {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    margin: 3rem auto;
+  }
+}

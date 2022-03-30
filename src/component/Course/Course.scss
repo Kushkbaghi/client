@@ -1,0 +1,13 @@
+.courses {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  margin: 10px;
+  .courses__table {
+    width: 100%;
+    border: 1px gray solid;
+    border-radius: 5px;
+  }
+}
