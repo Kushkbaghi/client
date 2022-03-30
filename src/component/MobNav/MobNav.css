@@ -1,0 +1,66 @@
+.mobNav {
+  width: 100vw;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+}
+
+@media screen and (min-width: 600px) {
+  .mobNav {
+    display: none;
+  }
+}
+
+.mobNav .log {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20%;
+  float: left;
+}
+
+.mobNav .log img {
+  width: 50px;
+  text-align: left;
+}
+
+.mobNav .open,
+.mobNav .close {
+  float: right;
+  top: 0;
+  right: 0;
+  width: 50px;
+}
+
+.mobNav .open svg,
+.mobNav .close svg {
+  font-size: 52px;
+  background: var(--info);
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.mobNav .mobNav__items {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 1rem;
+}
+
+.mobNav .mobNav__items a {
+  font-size: var(--fontSizeP);
+}
+/*# sourceMappingURL=MobNav.css.map */

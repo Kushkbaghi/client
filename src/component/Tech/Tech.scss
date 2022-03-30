@@ -1,0 +1,22 @@
+.tech {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  h2 {
+    font-size: var(--fontSizeH1);
+    font-family: var(--fontItalic);
+  }
+  .mytech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10rem;
+    svg {
+      flex-basis: 5rem;
+      font-size: 70px;
+   
+    }
+  }
+}

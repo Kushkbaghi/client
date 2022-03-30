@@ -1,9 +1,20 @@
-import React from 'react'
-import './Projects.scss'
-
-
-export default function Projects() {
+import "./Projects.scss";
+import { Project } from "../../component";
+import { project } from "../../images";
+export default function Projects({ projects }) {
   return (
-    <div>Projects</div>
-  )
+    <section className="projects">
+      <img className="sec-img" src={project} alt="" />
+      <h2>Mina projekt</h2>
+
+      <div className="project__project">
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
+      </div>
+    </section>
+  );
+}
+{
+  /* <Project  {}/> */
 }

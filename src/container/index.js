@@ -5,3 +5,4 @@ export {default as Courses} from './Courses/Courses';
 export {default as Jobs} from './Jobs/Jobs';
 export {default as Projects} from './Projects/Projects';
 export {default as Footer} from './Footer/Footer';
+export {default as Main} from './Main/Main';

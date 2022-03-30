@@ -1,0 +1,114 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  max-width: 960px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: transition;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav .nav__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+  width: 100%;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+@media screen and (max-width: 900px) {
+  .nav .nav__logo-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0.3;
+        -ms-flex: 0.3;
+            flex: 0.3;
+  }
+}
+
+.nav .nav__logo-link img {
+  width: 3rem;
+  height: 3rem;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 900px) {
+  .nav .nav__logo-link img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.nav .nav__logo-link strong {
+  font-size: var(--fontSizeP);
+  color: var(--info);
+  font-family: var(--fontExt);
+}
+
+@media screen and (max-width: 900px) {
+  .nav .nav__logo-link strong {
+    font-size: 12px;
+  }
+}
+
+.nav .desk-nav {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .desk-nav {
+    display: none;
+  }
+}
+
+.nav .desk-nav a {
+  font-size: var(--fontSizeP);
+  font-family: var(--fontExt);
+  width: 5px;
+  height: 5px;
+}
+
+.nav .desk-nav a:hover {
+  color: var(--info);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*# sourceMappingURL=Navbar.css.map */

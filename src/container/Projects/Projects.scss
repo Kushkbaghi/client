@@ -1,0 +1,31 @@
+.projects {
+  display: flex;
+  max-width: 960px;
+  flex-direction: column;
+  margin: 2rem auto;
+  align-items: start;
+
+  img {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10rem;
+  }
+  h2 {
+    font-size: var(--fontSizeH1);
+    font-family: var(--fontItalic);
+    border-left: 5px solid var(--extra);
+    width: 100%;
+  }
+  .project__project {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    margin: 10rem auto;
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 1fr;
+      padding:5%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 10px;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card {
+  -webkit-box-flex: 0.3333;
+      -ms-flex: 0.3333;
+          flex: 0.3333;
+  height: 400px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  border: 0.1px solid var(--light1);
+  border-radius: 5px;
+  -webkit-box-shadow: var(--shadowBox);
+          box-shadow: var(--shadowBox);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.card svg {
+  font-size: var(--fontSizeH1);
+  width: 100%;
+}
+
+.card h2 {
+  border-left: 5px solid var(--extra);
+  padding: 10px;
+  font-weight: 900;
+  width: 100%;
+  font-size: var(--fontSizeH6);
+  font-family: var(--fontExt);
+}
+
+.card p {
+  font-size: var(--fontSizeP);
+  font-family: var(--fontExt);
+}
+
+.card .card__link {
+  padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--fontItalic);
+  color: var(--primary);
+}
+
+.card .card__link svg {
+  font-size: 16px;
+  width: 20%;
+  padding: 0;
+  margin-left: 0;
+  text-align: left;
+}
+
+.card .card__link:hover {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=Cards.css.map */
