@@ -12,6 +12,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { AiFillHome } from "react-icons/ai";
 import "./App.scss";
+import { motion } from "framer-motion";
 export default function App() {
   const [projects, setProject] = useState([]);
   const [jobs, setJobs] = useState([]);
@@ -45,6 +46,7 @@ export default function App() {
   }, []); // Fetch just once
   return (
     <div className="App">
+     
       <Header />
       <a href="#start" className="to-home">
         <AiFillHome />{" "}
@@ -56,6 +58,7 @@ export default function App() {
       <Courses courses={courses} />
       <Contact />
       <Footer />
+     
     </div>
   );
 }
