@@ -5,7 +5,7 @@ import {study} from '../../images';
 
 export default function Courses({ courses }) {
   return (
-    <section className="courses">
+    <section id="studier" className="courses">
       <img className="sec-img" src={study} alt="en man sitter på en boll och läser en  bok" />
       <h2>Mina studier</h2>
 
@@ -13,6 +13,7 @@ export default function Courses({ courses }) {
         <table>
           <tr className="course__table">
             <th>Kursnamn</th>
+            <th>Studieort</th>
             <th>Progression</th>
             <th>Start datum</th>
             <th>Slut datum</th>

@@ -8,7 +8,7 @@ import {
 import { banner } from "../../images";
 export default function Banner() {
   return (
-    <section className="banner">
+    <section id="start" className="banner">
       <div className="banner__img">
         <img
           src={banner}

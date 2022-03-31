@@ -1,6 +1,16 @@
-import { Header, Banner, Main, Projects, Jobs, Courses, Contact } from "./container";
+import {
+  Header,
+  Banner,
+  Main,
+  Projects,
+  Jobs,
+  Courses,
+  Contact,
+  Footer,
+} from "./container";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { AiFillHome } from "react-icons/ai";
 import "./App.scss";
 export default function App() {
   const [projects, setProject] = useState([]);
@@ -36,12 +46,16 @@ export default function App() {
   return (
     <div className="App">
       <Header />
+      <a href="#start" className="to-home">
+        <AiFillHome />{" "}
+      </a>
       <Banner />
       <Main />
       <Projects projects={projects} />
       <Jobs jobs={jobs} />
       <Courses courses={courses} />
       <Contact />
+      <Footer />
     </div>
   );
 }

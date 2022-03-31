@@ -3,7 +3,7 @@ import { Project } from "../../component";
 import { project } from "../../images";
 export default function Projects({ projects }) {
   return (
-    <section className="projects">
+    <section id="case" className="projects">
       <img className="sec-img" src={project} alt="" />
       <h2>Mina projekt</h2>
 

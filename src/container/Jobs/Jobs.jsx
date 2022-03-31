@@ -5,7 +5,7 @@ import { job } from "../../images";
 
 export default function Jobs({ jobs }) {
   return (
-    <section className="jobs">
+    <section id="arbetserfarenhet" className="jobs">
       <img className="sec-img" src={job} alt="" />
       <h2>Mina arbetserfarenhet</h2>
 

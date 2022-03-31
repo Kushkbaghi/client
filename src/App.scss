@@ -81,13 +81,33 @@ button {
   margin: 0 auto;
   gap: 100px;
   padding: 0;
+  position: relative;
+}
+#root {
+  margin: 0 auto;
+}
+.to-home {
+  position: fixed;
+  top: 50vh;
+  right: 90%;
+  background: var(--light2);
+  border-radius: 50%;
+
+  svg {
+    font-size: 50px;
+    filter: drop-shadow(0 0 10px var(--dark1));
+    z-index: 1000 !important;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 h2,
 h3 {
   font-family: var(--fontItalic);
   text-align: center;
   padding: 2rem 3%;
-  width: 95% !important;
+  max-width: 750px !important;
 }
 p {
   font-family: var(--fontExt);
@@ -96,7 +116,7 @@ section {
   margin: 10rem auto;
 }
 .sec-img {
-  width: 60%;
+  max-width: 450px;
 }
 svg {
   filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4)) !important;

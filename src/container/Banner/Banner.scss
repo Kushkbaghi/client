@@ -1,5 +1,5 @@
 .banner {
-
+  display: flex;
   max-width: 960px;
   margin: 0 auto;
   padding: 2%;
@@ -16,15 +16,24 @@
     }
     .banner__CTA-links {
       width: 400px;
-      justify-content:center;
-      
+      justify-content: center;
     }
   }
 }
 
 .banner__img {
   flex: 0.5;
-  width: 70%;
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  img {
+    text-align: center;
+    content: fit;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 .banner__CTA {
   padding: 2%;

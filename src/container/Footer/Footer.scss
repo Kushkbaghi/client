@@ -1,0 +1,14 @@
+footer {
+  height: 10rem;
+  background-color: var(--dark1);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  p {
+    color: whitesmoke;
+    font-size: var(--fontSizeP);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+}

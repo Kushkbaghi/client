@@ -1,9 +1,10 @@
-import React from 'react'
-import './Footer.scss';
-
+import React from "react";
+import "./Footer.scss";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <p>&copy; 2022 Nick Kushkbaghi</p>
+    </footer>
   );
 }

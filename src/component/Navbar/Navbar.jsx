@@ -14,7 +14,7 @@ export default function Navbar() {
         <strong className="logo_text">Nick Kushkbaghi</strong>
       </a>
       <ul className=" desk-nav">
-        {["Start", "Om mig", "Case", "Arbetserfarenhet", "Studier"].map(
+        {["start", "kontakt", "case", "arbetserfarenhet", "studier"].map(
           (nav) => (
             <li className="nav__list-item" key={`link-${nav}`}>
               <a href={`#${nav}`}>{nav}</a>

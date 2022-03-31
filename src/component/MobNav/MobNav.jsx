@@ -25,7 +25,7 @@ export default function MobNav() {
             <AiOutlineClose onClick={() => setToggle(false)} />
           </div>
           <ul class="mobNav__items">
-            {["Start", "Om mig", "Case", "Arbetserfarenhet", "Studier"].map(
+            {["start", "kontakt", "case", "arbetserfarenhet", "studier"].map(
               (nav) => (
                 <li className="nav__list-item mobNav__item-" key={nav}>
                   <a href={`#${nav}`}>{nav}</a>

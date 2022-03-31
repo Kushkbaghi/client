@@ -15,7 +15,7 @@
 
 .card {
   flex: 0.3333;
-  min-height: 400px;
+  min-height: 450px;
   position: relative;
   align-items: start;
   border: 0.1px solid var(--light1);
@@ -41,6 +41,7 @@
   p {
     font-size: var(--fontSizeP);
     font-family: var(--fontExt);
+    padding: 0% 10px;
   }
   .card__link {
     position: absolute;
